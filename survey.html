@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <!--Number 1-->
+    <h1 id="title">Survey Form</h1><br>
+    <p id="description">A survey form about a what tools and softwares programmers love to use.</p><br>
+    <br>
+    <hr>
+    <form action="#" id="survey-form">
+        <div class="info">
+            <label for="fname" id="fname-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required><br><br><br>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" required><br><br><br>
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" placeholder="Enter a number (0-5)" min="1" max="5" required>
+        </div>
+        <div class="section2">
+            <label for="preference">Choose your programming language of preference: </label><br><br>
+            <select name="prog-language" id="dropdown">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+            <br><br><br><br>
+
+            <h4>Choose a text editor of your choice:</h4>
+            <div id="radio-btn"><br>
+                <label for="vsCode">Visual Studio Code</label>
+                <input type="radio" name="favEditor" id="vsCode" value="vsCode" class="editor">
+                <br>
+                <label for="bracket">Bracket</label>
+                <input type="radio" name="favEditor" id="bracket" value="bracket" class="editor">
+                <br>
+                <label for="sublime">Sublime</label>
+                <input type="radio" name="favEditor" id="sublime" value="sublime" class="editor">
+
+            </div>
+            <br><br><br><br>
+            <h4>Choose your three favorite online editors:</h4>
+            <div id="check-btn"><br>
+                <label for="codepen">CodePen <input type="checkbox" name="fav3" id="codepen" class="fav3"></label><br>
+                <label for="replit">Repl.it <input type="checkbox" name="fav3" id="replit" class="fav3"></label><br>
+                <label for="codeSandbox">Code Sandbox <input type="checkbox" name="fav3" id="codeSandbox"
+                        class="fav3"></label><br>
+                <label for="jsFiddle">JS Fiddle <input type="checkbox" name="fav3" id="jsFiddle"
+                        class="fav3"></label><br>
+                <label for="playCode">Play Code <input type="checkbox" name="fav3" id="playCode" class="fav3"></label>
+            </div>
+        </div>
+        <div class="comments">
+            <h4>Comment</h4><br>
+            <textarea name="comment" id="comment" cols="45" rows="5" placeholder="Please leave a comment"></textarea>
+            <br><br><br><br>
+            <input type="button" value="Submit" id="submit">
+        </div>
+    </form>
+</body>
+
+</html>
